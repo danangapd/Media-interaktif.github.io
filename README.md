@@ -5,6 +5,3 @@ Media Interaktif berbasis website merupakan project petama saya dibidang informa
 2.	Framework : a.	Laravel
 3.	Bahasa Pemrograman : a.	Html, CSS, Javascript
 4.	Database : a.	MySQL database
-
-
-Client adalah seorang mahasiswa tingkat akhir jurusan Pendidikan Guru Sekolah Dasar (PGSD). Media interaktif ini dibuat untuk tujuan penelitian tugas akhir.
