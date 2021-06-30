@@ -1,0 +1,422 @@
+/* Navbar */
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+body, html {
+	height: 100%;
+
+}
+
+@font-face {
+	font-family: 'NationalPark-Heavy';
+	src: url('../../fonts/NationalPark-Heavy.otf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+.navbar-brand {
+	/*font-family: Alatsi;
+	font-size: 30px;*/
+	padding: 0px;
+}
+.navbar-brand img {
+  height: 100px;
+  padding: 15px;
+  width: auto;
+}
+/* Jumbotron Umum Css */
+.jumbotron{
+	background-image: url('../img/bag.jpg');
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+}
+.jumbotron .container{
+	z-index: 1;
+	position: relative;
+}
+.jumbotron::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+	position: absolute; 
+	bottom: 7px;
+	opacity: 30%;
+}
+.jumbotron .display-4{
+	color: white;
+	margin-top: 160px;
+	font-weight: 200;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	margin-bottom: 30px;
+
+}
+.jumbotron .display-4 span{
+	font-weight: 500;
+
+}
+/* Jumbotron Panduan */
+.panduan{
+	background-image: url(../img/panduan.jpg);
+	background-size: cover;
+	height: 540px;
+}
+.panduan .display-4{
+	color: white;
+	margin-top: 160px;
+	font-weight: 200;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	margin-bottom: 30px;
+
+}
+.panduan .display-4 span{
+	font-weight: 500;
+
+}
+
+/* Login */
+.box{
+	width: 300px;
+	padding: 40px;
+	top: 50%;
+	left: 50%;
+	transform: -50%, -50%;
+	background:rgba(46, 68, 95, 0.92);
+	text-align: center;
+	border-radius: 7px;
+}
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "Password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "Password"]:focus{
+	width: 280px;
+	border-color: #2ecc71;
+}
+.box input[type="submit"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box input[type ="submit"]:hover{
+	background: #2ecc71;
+}
+	/* End Login */
+
+/* Info Panel */
+.info-panel{
+	box-shadow: 0 3px 20px rgba(0, 0, 1, 0.13);
+	border-radius: 12px;
+	margin-top: -75px;
+	background-color: white;
+	padding: 15px;
+	transition: box-shadow 0.3s ease-in-out;
+	z-index: 1;
+
+}
+.info-panel:hover{
+	box-shadow: 0 0 20px 0px #33333370;
+}
+
+.info-panel img{
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+.info-panel a{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'NationalPark-Heavy';
+	margin: 12px 0px;
+	color: #000000;
+
+}
+/* .info-panel p{
+	font-size: 14px;
+	color: #ACACAC;
+	margin-top: -5px;
+	font-weight: 200;
+
+} */
+/*akhir Info panel*/
+
+/*Info panel Panduan Dll*/
+.info-panel-panduan{
+	box-shadow: 0 3px 20px rgba(0, 0, 1, 0.13);
+	border-radius: 50px;
+	margin-top: -40px;
+	background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+	padding: 20px;
+	transition: box-shadow 0.3s ease-in-out;
+	width: 360px;
+	z-index: 1;
+}
+.info-panel-panduan:hover{
+	box-shadow: 0 0 20px 0px #33333370;
+}
+
+.info-panel-panduan img{
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.info-panel-panduan h4{
+	font-size: 26px;
+	font-family: 'NationalPark-Heavy';
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+	text-align: center;
+	line-height: 0.2 !important;	
+}
+.info-panel-panduan p{
+	font-size: 14px;
+	color: #ACACAC;
+	margin-top: -5px;
+	font-weight: 200;
+
+}
+/*akhir Info panel Panduan Dll*/
+
+
+/* Workingspace */
+.workingspace{
+	margin-top: 53px;
+	text-align: center;
+}
+.workingspace h3{
+	font-size: 52px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+.workingspace h3 span{
+	font-weight: 500;
+
+}
+.workingspace p{
+	font-size: 18px;
+	color: #111111;
+	font-weight: bold;
+	margin: 30px 0;
+	font-family: cursive;
+}
+
+/* Workingspace Tentang*/
+.workingspace-tentang{
+	margin-top: 53px;
+	text-align: left;
+}
+.workingspace-tentang h3{
+	font-size: 15px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 30px;
+	font-family: 'NationalPark-Heavy';
+}
+.workingspace-tentang h3 span{
+	font-weight: 500;
+
+}
+
+/* Workingspace */
+.workingspace-dll{
+	margin-top: 53px;
+	text-align: center;
+}
+.workingspace-dll p{
+	font-size: 18px;
+	color: #111111;
+	font-weight: bold;
+	margin: 30px 0;
+}
+
+/* Utility */
+.footer{
+	margin-top: 100px;
+}
+.footer p{
+	color: #ACACAC;
+	font-size: 16px;
+}
+
+/* Utility */
+.tombol{
+	text-transform: uppercase;
+	border-radius: 40px;
+	box-shadow: 0 0 11px 0px #0000004d;
+    margin: 16px 0 0 0;
+	width: 191px;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    color: #fff !important;
+    border: none !important;   
+	}
+
+.tombol:hover{
+	background-image: linear-gradient( 135deg, #FFA8A8 10%, #FCFF00 100%);
+}
+
+.tombol1{
+	text-transform: uppercase;
+	border-radius: 40px;
+	box-shadow: 0 0 11px 0px #0000004d;
+    margin: 16px 0 0 0;
+	width: 350px;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    color: #fff !important;
+    border: none !important;   
+	}
+.tombol1:hover{
+	background-image: linear-gradient( 135deg, #FFA8A8 10%, #FCFF00 100%);
+}
+/* Gabung CSS*/
+
+  label {
+	font-size: 11pt;
+  }
+  #card {
+	background: #00A859;
+	border-radius: 8px;
+	box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+	height: 410px;
+	margin: 6rem auto 8.1rem auto;
+	width: 329px;
+  }
+  #card-content {
+	padding: 12px 44px;
+  }
+  .score {
+	font-size: 34px;
+    font-weight: 800;
+    margin-top: 10px;
+	text-align: center;
+	font-family: 'NationalPark-Heavy';
+  }
+  .tampilan{
+	display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -30px;
+  }
+  .wrap-score{
+    height: 113px;
+    background: #fff;
+    border-radius: 6px;
+	width: 100%;
+	display: flex;	  
+  }
+  .wrap-score > p{
+	  margin: auto;
+	  margin: auto;
+	  font-size: 54px;
+  }
+ 
+
+/* Css khusus Dekstop */
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav {
+    margin-top: -20px;
+    flex-direction: row;
+}
+	.navbar-brand, .nav-link{
+		font-family: 'NationalPark-Heavy';
+		color: #000000 !important;
+		text-shadow: 1px, 1px, 1px rgba(0, 0, 0, 0.7);
+		margin-top: -60px;
+}
+	}
+	.nav-link{
+	text-transform: uppercase;
+	margin-right: 30px;
+	font-weight: bold;
+	}
+
+	.nav-link:hover::after{
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.jumbotron{
+		margin-top: -70px;
+		height: 640px;
+		height: 99%!important;
+    	margin: 0!important;
+	}
+	.jumbotron .display-4{
+		font-size: 39px;
+		margin-top: 105px;
+	}
+	.jumbotron-panduan{
+		margin-top: -70px;
+		height: 640px;
+		height: 100%!important;
+    	margin: 0!important;
+	}
+	.jumbotron-panduan .display-4{
+		font-size: 39px;
+		margin-top: 105px;
+	}
+	.tombol{
+	text-transform: uppercase;
+	border-radius: 40px;
+	box-shadow: 0 0 11px 0px #0000004d;
+    margin: 133px 0 0 0;
+	width: 300px;
+	font-weight: bold;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    color: #fff !important;
+    border: none !important;   
+	}
+	.tombol1{
+	text-transform: uppercase;
+	border-radius: 40px;
+	box-shadow: 0 0 11px 0px #0000004d;
+    margin: 16px 0 0 0;
+	width: 360px;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    color: #fff !important;
+    border: none !important;   
+	}
+	.workingspace{
+	text-align: left;
+	}
+	.orang h5{
+	font-size: 32px;
+	}
